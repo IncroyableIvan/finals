@@ -1,0 +1,218 @@
+-- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: finals
+-- ------------------------------------------------------
+-- Server version	5.5.57-0ubuntu0.14.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Albums`
+--
+
+DROP TABLE IF EXISTS `Albums`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Albums` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `artist` varchar(45) NOT NULL,
+  `genre` varchar(45) NOT NULL,
+  `description` longtext NOT NULL,
+  `year` year(4) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Albums`
+--
+
+LOCK TABLES `Albums` WRITE;
+/*!40000 ALTER TABLE `Albums` DISABLE KEYS */;
+INSERT INTO `Albums` VALUES (1,'London Calling','The Clash','Rock/Punk','Incontestablement le meilleur album (de tous les temps) du groupe, mêlant brillamment punk rock brut à d\'autres influences de l\'époque : reggae, ska, soul...\nUn bijou façonné par les quatre membres, chacun apportant son style et ses influences personnelles, plus juste et travaillé que les disques précédents mais toujours aussi corrosif.',1979,'15,99€'),(2,'Selling England by the Pound','Genesis','Rock','Comme dans les albums précédents, le groupe innove dans les mélodies, les rythmes et les tempos, innovations chères au rock progressif. ... Sur cet album figure également la chanson I Know What I Like (In Your Wardrobe), qui fut le premier single de Genesis à atteindre la 17e place dans les charts anglais en avril 1974.',1973,'15,99€'),(3,'Crime of the Century','Supertramp','Rock/Pop rock','Now they\'re planning the crime of the century\nWell what will it be? \nRead all about their schemes and adventuring\nIt\'s well worth a fee\nSo roll up and see\nAnd they rape the universe\nHow they\'ve gone from bad to worse\nWho are these men of lust, greed, and glory? \nRip off the masks and let see\nBut that\'s no right oh no, what\'s the story? \nBut there\'s you and there\'s me\nThat can\'t be right',1974,'15,99€'),(4,'Breackfast in America','Supertramp','Rock classique/Pop rock','Voilà un disque connu du monde entier,considéré, plus à raison qu’à tort, comme étant le meilleur d’une discographie plutôt riche, et dont quelques 22 millions de copies se sont écoulées à ce jour : Breakfast in America de Supertramp qui arrive en 1979. C’est le sixième album studio du groupe. On a l’impression de voir cet album partout, chez les mamies, les papis, les tontons, les voisins, les bébés, les chats, les chiens, partout !',1979,'15,99€'),(5,'The Dark Side of the Moon','Pink Floyd','Rock','Accueil / Musique / Flashback / « The Dark Side of the Moon », la puissance de Pink Floyd\nPochette de l\'album \"The Dark Side of the Moon\"\nPochette de l\'album \"The Dark Side of the Moon\"\n« The Dark Side of the Moon », la puissance de Pink Floyd\nRédigé par : La rédaction  in Flashback, Musique 10/03/2017 18:19	1 commentaire 14,304 vues\n\nAlbum aujourd’hui mythique, véritable succès dès sa sortie, plébiscité par la critique à l’époque et encore aujourd’hui…. The Dark Side of the Moon sort le 10 mars 1973 aux Etats-Unis. L’album est le huitième opus studio de Pink Floyd. Il arrive tout de suite en tête des ventes aux Etats-Unis, grâce notamment au légendaire « Money ».',1973,'17,99€'),(6,'Enter the Wu‐Tang: 36 Chambers','Wu-Tang Clan','Rap/Hip-hop','Twenty years ago, the Wu-Tang Clan blessed the world with their debut album, Enter the Wu-Tang (36 Chambers). Masterminded by the group\'s de facto leader RZA, the album paired grit-sodden, lo-fi production with razor sharp rhyming skills from the nine-man troupe who claimed Shaolin (as they\'d re-christened Staten Island) as their fortress. The album\'s influence has become legendary: It helped restore New York City rap pride in the face of Dr. Dre and Snoop Dogg\'s g-funk dominance, Raekwon and Ghostface\'s rhyme styles inspired the subsequent work of Nas, Jay Z and the Notorious BIG, and RZA\'s tick of speeding up soul samples struck a chord with a young Kanye West who then embraced the technique for his own early break-through productions.',1993,'13,99€'),(7,'The Eminen Show','Eminem','Rap','\"The Eminem Show\" est à coup sûr l\'effort le plus abouti lyricalement de la part d\'un Slim Shady intelligent qui s\'impose de plus en plus comme un grand parolier, capable de transformer son quotidien en art avec une facilité déconcertante (l\'inclusion des lyrics dans le livret le prouvera à tous ceux qui ont un peu de mal avec la langue anglaise). Certaines lacunes au niveau de la production auraient pu être éliminées en réduisant le nombre de morceaux inclus... mais on ne va pas se plaindre de la \'générosité\' d\'un Eminem qui pêche juste par excès. Au final, \"The Eminem Show\" est comme on pouvait le prévoir l\'un des gros albums les plus intéressants de cette année 2002.',2002,'15,99€'),(8,'All Eyes on Me','2Pac','Rap','The title of 2PAC\'s fourth album, All Eyez on Me, is not just a reflection of his usual arrogance and paranoia — people are watching 2Pac. This two-disc set comes just four months after he was released on bail pending appeal on his conviction for sexual assault. It comes barely a year after he was shot. Most important, All Eyez on Me marks 2Pac\'s new allegiance with the West Coast\'s powerhouse rap dynasty, Death Row Records.',1996,'15,99€'),(9,'Ready to Die','The Notorious B.I.G.','Rap','Premier album du rappeur mythique de la big apple. Charisme et flow mythique pour un diamant brut taillé et marketé par mister Puff Daddy sans lequel il faut bien reconnaitre Notorious Big n\'aurait pas eut l\'aura qui est encore la sienne 10 ans apres sa mort. Peut-etre le seul rappeur à avoir pu alterner titres ghettos et grosses prods dansantes sans que son authenticité et ses vertues n\'aient jamais été remises en cause. Normal, son flow est vraiment incomparable. Certains expliquent que c\'est du fait qu\'il n\'écrivait ni textes ni brouillons (il retient tout de mémoire) et que cette technique impose de racourcir ses phrases et donc de trouver les gimmick qui vont droit à l\'essentiel.',1994,'15,99€');
+/*!40000 ALTER TABLE `Albums` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `Characters`
+--
+
+DROP TABLE IF EXISTS `Characters`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Characters` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `principal_character` varchar(45) NOT NULL,
+  `supporting_character` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Characters`
+--
+
+LOCK TABLES `Characters` WRITE;
+/*!40000 ALTER TABLE `Characters` DISABLE KEYS */;
+INSERT INTO `Characters` VALUES (1,'Rick Grimes','Carl Grimes'),(2,'Rick','Morty'),(3,'Daenerys','Jon Show'),(4,'Tony Soprano','Carmela Soprano'),(5,'Stan Marsh','Kyle Broflovsky'),(6,'Joey','Chandler'),(7,'Bart','Homer'),(8,'Walter White','Jessy Pinkman');
+/*!40000 ALTER TABLE `Characters` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `Movies`
+--
+
+DROP TABLE IF EXISTS `Movies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Movies` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `director` varchar(45) NOT NULL,
+  `genre` varchar(45) NOT NULL,
+  `description` longtext NOT NULL,
+  `year` year(4) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Movies`
+--
+
+LOCK TABLES `Movies` WRITE;
+/*!40000 ALTER TABLE `Movies` DISABLE KEYS */;
+INSERT INTO `Movies` VALUES (1,'The Godfather','Francis Ford Coppola','Gangster/Mafia','Il s\'agit d\'une adaptation du roman éponyme de Mario Puzo. L\'histoire s\'étale de 1945 à 1955, et se centre sur l\'ascension de Michael Corleone (Al Pacino), perçu comme ne pouvant prétendre à la succession d\'une famille mafieuse impitoyable, la famille Corleone, dominé par son père, le patriarche Vito Corleone (Marlon Brando).\n\nLe Parrain est souvent considéré comme l\'un des plus grands films du cinéma mondial1 et un des plus influents, spécialement dans le genre des films de gangsters2. Il est listé à la deuxième place des meilleurs films du cinéma américain par l\'American Film Institute (AFI) (derrière Citizen Kane)3. En 1990, le film est sélectionné par Le National Film Registry pour être conservé à la Bibliothèque du Congrès des États-Unis pour son « importance culturelle, historique ou esthétique »4.',1972,'19,99€'),(2,'The Godfather Part II','Francis Ford Coppola','Gangster/Mafia','Michael Corleone a succédé à son père Vito à la tête de la famille. Il dirige alors les affaires des Corleone d\'une main implacable, en éliminant ses ennemis les uns après les autres. Mais en tentant en vain de ressembler à son père, il ne fera preuve que d\'une autorité dévastatrice qui peu à peu l\'éloignera des personnes qu\'il aime.\n\nLa deuxième partie du Parrain offre deux histoires parallèles. L’une implique le chef de la Mafia en 1958/1959 après les événements du premier film, l’autre est une suite de flash-back (retours en arrière) sur le parcours de son père, Vito Corleone, de sa jeunesse en Sicile à la création de la famille Corleone à New York.',1974,'19,99€'),(3,'Pull Fiction','Quentin Tarantino','Gangster','L\'odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood à travers trois histoires qui s\'entremêlent.',1994,'15,99€'),(4,'Star Wars, épisode IV : Un nouvel espoir','Georges Lucas','Science Fiction','L\'histoire de cet épisode se déroule presque dix-neuf ansNote 1 après les événements de La Revanche des Sith (sorti en 2005), et juste après ceux de Rogue One (sorti en 2016). L\'intrigue se concentre sur l\'Alliance rebelle, une organisation qui tente de détruire la station spatiale Étoile noire, l\'arme absolue du très autoritaire Empire galactique. Mêlé malgré lui à ce conflit galactique, le jeune ouvrier agricole Luke Skywalker s\'engage au sein des forces rebelles après le massacre de sa famille par des soldats impériaux. Initié aux pouvoirs de la Force par son mentor Obi-Wan Kenobi, trop tôt assassiné par le maléfique Dark Vador, Luke utilise ses nouveaux dons pour détruire l\'Étoile noire à la fin du film.',1977,'17,99€'),(5,'Forrest Gump','Robert Zemeckis','Comédie dramatique','Le film relate l\'histoire mouvementée des États-Unis entre les années 1950 et les années 1980 au travers du regard d\'un « simple d\'esprit », Forrest Gump, qui devient involontairement l\'acteur central, voire l\'instigateur des principaux évènements de cette époque en Amérique.',1994,'17,99€'),(6,'GoodFellas','Martin Scorcese','Gangster/Mafia','Le film est basé sur le livre Wiseguy, de Nicholas Pileggi, sorti en 1986, racontant l\'histoire vraie de Henry Hill. Pileggi participe à l\'écriture du scénario avec Scorsese. Le film retrace la montée et la chute d\'associés de la famille Lucchese, Henry Hill et ses amis, couvrant une période de 1955 à 1980.',1990,'17,99€'),(7,'Titanic','James Cameron','Romance','Titanic is a 1997 American epic romance-disaster film directed, written, co-produced and co-edited by James Cameron. A fictionalized account of the sinking of the RMS Titanic, it stars Leonardo DiCaprio and Kate Winslet as members of different social classes who fall in love aboard the ship during its ill-fated maiden voyage.',1997,'15,99€'),(8,'Fight Club','David Fincher','Drame/Thriller','Fight Club is a 1999 American film based on the 1996 novel of the same name by Chuck Palahniuk. The film was directed by David Fincher, and stars Brad Pitt, Edward Norton and Helena Bonham Carter. Norton plays the unnamed protagonist, referred to as the narrator, who is discontented with his white-collar job. He forms a \"fight club\" with soap maker Tyler Durden, played by Pitt, and they are joined by men who also want to fight recreationally. The narrator becomes embroiled in a relationship with Durden and a dissolute woman, Marla Singer, played by Bonham Carter.',1999,'15,99€'),(9,'Vol au-dessus d\'un nid de coucou','Milos Forman','Drame','R. P. McMurphy se fait interner dans un hôpital psychiatrique pour échapper à la prison suite à un viol supposé. Il va être touché par la détresse et la solitude des patients. Sous les soins de l\'infirmière Ratched, il s\'oppose vite par sa forte personnalité aux méthodes répressives de cette dernière et décide alors de révolutionner ce petit monde.\nR. P. McMurphy se fait interner dans un hôpital psychiatrique pour échapper à la prison suite à un viol supposé. Il va être touché par la détresse et la solitude des patients. Sous les soins de l\'infirmière Ratched, il s\'oppose vite par sa forte personnalité aux méthodes répressives de cette dernière et décide alors de révolutionner ce petit monde.\nR. P. McMurphy se fait interner dans un hôpital psychiatrique pour échapper à la prison suite à un viol supposé. Il va être touché par la détresse et la solitude des patients. Sous les soins de l\'infirmière Ratched, il s\'oppose vite par sa forte personnalité aux méthodes répressives de cette dernière et décide alors de révolutionner ce petit monde.\n\nR. P. McMurphy se fait interner dans un hôpital psychiatrique pour échapper à la prison suite à un viol supposé. Il va être touché par la détresse et la solitude des patients. Sous les soins de l\'infirmière Ratched, il s\'oppose vite par sa forte personnalité aux méthodes répressives de cette dernière et décide alors de révolutionner ce petit monde.\n\n',1975,'19,99€');
+/*!40000 ALTER TABLE `Movies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `genres`
+--
+
+DROP TABLE IF EXISTS `genres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `genres` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `genres`
+--
+
+LOCK TABLES `genres` WRITE;
+/*!40000 ALTER TABLE `genres` DISABLE KEYS */;
+INSERT INTO `genres` VALUES (1,'Drame'),(2,'Horreur'),(3,'Animation'),(4,'Humour'),(5,'Policier'),(6,'Thriller'),(7,'Fantasy'),(8,'Comedy');
+/*!40000 ALTER TABLE `genres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tvshows`
+--
+
+DROP TABLE IF EXISTS `tvshows`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tvshows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `creator` varchar(45) NOT NULL,
+  `season` varchar(45) NOT NULL,
+  `description` longtext NOT NULL,
+  `year` year(4) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tvshows`
+--
+
+LOCK TABLES `tvshows` WRITE;
+/*!40000 ALTER TABLE `tvshows` DISABLE KEYS */;
+INSERT INTO `tvshows` VALUES (1,'The Walking Dead','Frank Darabont/Robert Kirkman','7','L\'histoire suit le personnage de Rick Grimes (interprété par Andrew Lincoln) qui se réveille d\'un coma de plusieurs semaines pour découvrir que la population a été ravagée par une épidémie inconnue qui transforme les êtres humains en morts-vivants, appelés « rôdeurs ». Après avoir retrouvé sa famille, il devient très vite le leader d\'un groupe de rescapés d\'Atlanta. Ils seront amenés à devoir survivre dans un monde post-apocalyptique face à des rôdeurs et d\'autres groupes de survivants, pour certains plus dangereux encore que les rôdeurs eux-mêmes.',2010,'45€'),(2,'Game of Thrones','David Benioff/D.B. Weiss/George R.R. Martin ','7','L\'histoire de la série, située sur les continents fictifs de Westeros et Essos à la fin d\'un été d\'une dizaine d\'années, entrelace plusieurs intrigues. La première intrigue suit l\'histoire des membres de plusieurs familles nobles, dans une guerre civile pour conquérir le Trône de Fer du Royaume des Sept Couronnes. La deuxième intrigue couvre l\'histoire de Jon Snow et de la future menace croissante de l\'hiver approchant, des créatures mythiques et légendaires venues du Nord du Mur de Westeros. La troisième raconte la démarche de Daenerys Targaryen au sud d\'Essos, la dernière représentante en exil de la dynastie déchue en vue de reprendre le Trône de Fer. À travers ces personnages « moralement ambigus », la série explore les sujets liés au pouvoir politique, à la hiérarchie sociale, la religion, la guerre civile, la sexualité, et à la violence en général.',2011,'45€'),(3,'Breaking Bad','Vince Gilligan','5','Walter « Walt » White est professeur de chimie dans un lycée, et vit avec son fils handicapé et sa femme enceinte à Albuquerque, au Nouveau-Mexique. Lorsqu\'on lui diagnostique un cancer du poumon en phase terminale avec une espérance de vie estimée à deux ans, tout s\'effondre pour lui. Il décide alors de mettre en place un laboratoire et un trafic de méthamphétamine pour assurer un avenir financier confortable à sa famille après sa mort, en s\'associant à Jesse Pinkman, un de ses anciens élèves devenu petit trafiquant.\n\nWalter « Walt » White est professeur de chimie dans un lycée, et vit avec son fils handicapé et sa femme enceinte à Albuquerque, au Nouveau-Mexique. Lorsqu\'on lui diagnostique un cancer du poumon en phase terminale avec une espérance de vie estimée à deux ans, tout s\'effondre pour lui. Il décide alors de mettre en place un laboratoire et un trafic de méthamphétamine pour assurer un avenir financier confortable à sa famille après sa mort, en s\'associant à Jesse Pinkman, un de ses anciens élèves devenu petit trafiquant.\n\n',2008,'45€'),(4,'Rick and Morty','Dan Harmon/Justin Roiland','3','Rick est un scientifique âgé qui a récemment renoué avec sa famille. Il passe le plus clair de son temps à entraîner son petit-fils Morty dans des aventures extraordinaires et dangereuses, à travers l\'espace et dans des univers parallèles. Ajoutés à la vie de famille déjà instable de Morty, ces évènements ne lui amènent qu\'un surplus de stress, à la maison et au lycée.',2013,'45€'),(5,'The Simpson','Matt Groening','28','Les Simpson (The Simpsons) est une série télévisée d\'animation américaine1 créée par Matt Groening et diffusée depuis le 17 décembre 1989 sur la chaîne américaine Fox.\n\nElle met en scène les Simpson, stéréotype d\'une famille de classe moyenne2. Leurs aventures servent une satire du mode de vie américain. Les membres de la famille, ayant tous la peau de couleur jaune, sont Homer, Marge, Bart, Lisa et Maggie.',1989,'35€'),(6,'South Park','Trey Parker/Matt Stone','20','South Park est une série télévisée d\'animation américaine, créée et écrite par Trey Parker et Matt Stone, diffusée depuis le 13 août 1997 sur Comedy Central. La série met en scène les aventures de quatre enfants d\'école primaire : Stan Marsh, Kyle Broflovski, Eric Cartman et Kenny McCormick qui vivent à South Park, petite ville du Colorado. Des phénomènes surnaturels ou des événements politiques motivent un grand nombre de leurs aventures. L\'humour de la série se veut nonsense, parodique, sarcastique, graveleux et scatologique, mais prend souvent quelques traits de maturité avec des touches de peinture critique et satirique de la société américaine. En raison de la vulgarité, de la violence graphique ou encore des thèmes abordés, la série est réservée à un public averti.',1997,'45€'),(7,'Friends','Marta Kauffman/David Crane','10','onica Geller, une jeune cuisinière d\'environ 25 ans, vit dans un appartement situé à Manhattan, dans le Greenwich Village. Un jour, son amie d\'enfance, Rachel Green, qu\'elle n\'avait plus vue depuis des années, lui rend visite après avoir rompu avec son fiancé le jour de leur mariage. Rachel devient alors la nouvelle colocataire de Monica et s’intègre sans problème à son groupe d\'amis, composé de : Phoebe Buffay (l\'ancienne colocataire de Monica), Ross Geller (le frère de Monica, qui est secrètement amoureux de Rachel depuis le lycée), Chandler Bing (qui est le meilleur ami de Ross depuis l\'université) et Joey Tribbiani (le colocataire actuel de Chandler). Ces deux derniers vivent dans l\'appartement juste en face de celui de Monica, sur le même palier.\n\nLa série raconte la vie quotidienne de ces six amis, ainsi que l\'évolution de leur vie professionnelle et affective pendant onze ans.',1994,'35€'),(8,'The Sopranos','David Chase','6','Tony Soprano, gangster habitant dans le New Jersey, souffre de crises de panique et doit voir en secret un analyste, le docteur Jennifer Melfi. La série suit ses problèmes de famille - conflit avec sa femme Carmela, ses deux enfants Meadow et Anthony Junior, sa mère Livia et son oncle « Junior » - et sa carrière criminelle sur plusieurs années. Conflits de succession mafieux, vendettas personnelles et la peur constante des informateurs font également partie de ses préoccupations.\n\n',1999,'45€');
+/*!40000 ALTER TABLE `tvshows` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tvshows_genres`
+--
+
+DROP TABLE IF EXISTS `tvshows_genres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tvshows_genres` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_tvshows` int(11) NOT NULL,
+  `id_genres` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tvshows_genres`
+--
+
+LOCK TABLES `tvshows_genres` WRITE;
+/*!40000 ALTER TABLE `tvshows_genres` DISABLE KEYS */;
+INSERT INTO `tvshows_genres` VALUES (1,1,2),(2,2,7),(3,3,5),(4,4,3),(5,5,3),(6,6,3),(7,7,8),(8,8,1);
+/*!40000 ALTER TABLE `tvshows_genres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `videogames`
+--
+
+DROP TABLE IF EXISTS `videogames`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `videogames` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `editor` varchar(45) NOT NULL,
+  `genre` varchar(45) NOT NULL,
+  `description` longtext NOT NULL,
+  `year` year(4) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `videogames`
+--
+
+LOCK TABLES `videogames` WRITE;
+/*!40000 ALTER TABLE `videogames` DISABLE KEYS */;
+INSERT INTO `videogames` VALUES (1,'Super Mario Bros','Nintendo','Plates-formes','L\'action se déroule dans un univers fictif nommé le royaume Champignon où habitent la princesse Toadstool, Peach au Japon, et ses serviteurs, les Toads. Un jour, une horde de Koopas maléfiques envahit le Royaume champignon et transforme tous ses habitants en briquesm 1,1. La seule personne qui peut briser le maléfice et restaurer la paix dans le royaume est la princesse Toadstool, mais malheureusement, elle se fait kidnapper par Bowser, le roi des Koopas. Mario, le héros Italien de l\'histoire, est mis au courant de la situation catastrophique du royaume et de ses habitants, et décide de partir à l\'aventure pour libérer la princesse Toadstool des griffes de Bowserm 1.',1985,'25€'),(2,'The Legend of Zelda: Ocarina of Time','Nintendo','Action/Aventure','Ocarina of Time raconte l\'histoire de Link, un jeune garçon vivant dans un village perdu dans la forêt, qui parcourt le royaume d\'Hyrule pour empêcher Ganondorf d\'obtenir la Triforce, une relique sacrée qui réalise les vœux de son détenteur, avec laquelle il désire régner sur le monde. Pour accomplir sa quête, Link devra voyager dans le temps grâce à son ocarina et retrouver les sept sages qui lui permettront d\'enfermer Ganondorf dans un sceau dimensionnel.',1998,'25€'),(3,'The Last of UsThe Last of Us\nThe Last Of Us','Sony Computer Entertainment','Action/Aventure/Survival','Le titre prend place dans un univers post-apocalyptique après une pandémie provoquée par un champignon appelé le cordyceps. Les deux personnages se nomment Joel (personnage incarné par le joueur) et Ellie, et doivent survivre ensemble lors de leur traversée du territoire américain.',2013,'35€'),(4,'Grand Theft Auto V','Rockstar Games','Action/Aventure','The game is played from either a first-person or third-person view and its world is navigated on foot or by vehicle. Players control the three lead protagonists throughout single-player and switch between them both during and outside of missions. The story is centred on the heist sequences, and many missions involve shooting and driving gameplay. A \"wanted\" system governs the aggression of law enforcement response to players who commit crimes. Grand Theft Auto Online, the online multiplayer mode, lets up to 30 players explore the open world and engage in cooperative or competitive game matches.',2013,'35€'),(5,'Tetris','Nintendo','Réflexion','Tetris met le joueur au défi de réaliser des lignes complètes en déplaçant des pièces de formes différentes, les tétriminos, qui défilent depuis le haut jusqu\'au bas de l\'écran. Les lignes complétées disparaissent tout en rapportant des points et le joueur peut de nouveau remplir les cases libérées. Le jeu n\'a pas de fin : le joueur perd la partie lorsqu\'un tétrimino reste bloqué en haut. Il doit donc résister le plus longtemps à la chute continue des tétriminos, afin de réaliser le meilleur score.',1984,'5€'),(6,'Super Mario 64','Nintendo','Plates-formes','Super Mario 64 se déroule dans le château de la princesse Peach, qui se compose de trois étages, un sous-sol, des douves et une cour. La zone à l\'extérieur du château est une zone d\'introduction dans laquelle le joueur peut expérimenter tous les nouveaux mouvements permis par la 3D. Des peintures et des murs secrets éparpillés à travers le château permettent d\'entrer dans les niveaux6.',1996,'25€'),(7,'GoldenEye 007','Nintendo','FPS/Infiltration','Dans GoldenEye 007, le joueur incarne James Bond, sous les traits de Pierce Brosnan, en vue subjective. Les niveaux du jeu sont départagés en mission et retracent en bonne partie les évènements du film GoldenEye. Avant chaque mission, un briefing expose la situation au joueur et détaille les objectifs et est agrémenté des commentaires du personnel du MI6 avec ceux de M, Q et Moneypenny. Durant chaque mission, le joueur doit accomplir une liste d\'objectifs : récupérer un objet, rencontrer quelqu\'un, s\'échapper, etc. Les objectifs peuvent être remplis dans le désordre mais doivent tous être réussis avant de quitter le niveau pour pouvoir passer à la mission suivante.',1997,'20€');
+/*!40000 ALTER TABLE `videogames` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-07-28 10:36:20
