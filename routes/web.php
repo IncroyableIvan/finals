@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 Route::get('/accueil', 'AccueilController@index');
 
-// Routes in relation to albums element
+/*
+// Routes in relation to album element
 Route::get('/albums', 'AlbumsController@index');
 Route::get('/add/album', 'AlbumsController@addAlbum');
 Route::post('/insert/album', 'AlbumsController@insertAlbum');
@@ -25,15 +26,16 @@ Route::post('/delete/album', 'AlbumsController@deleteAlbum');
 Route::post('/update/album', 'AlbumsController@updateAlbum');
 Route::post('/update/album/action', 'AlbumsController@updateAlbumAction');
 
-// Routes in relation to movies element
+// Routes in relation to movie element
 Route::get('/movies', 'MoviesController@index');
 Route::get('/add/movie', 'MoviesController@addMovie');
 Route::post('/insert/movie', 'MoviesController@insertMovie');
 Route::post('/delete/movie', 'MoviesController@deleteMovie');
 Route::post('/update/movie', 'MoviesController@updateMovie');
 Route::post('/update/movie/action', 'MoviesController@updateMovieAction');
+*/
 
-// Routes in relation to tv_shows element
+// Routes in relation to tvshow element
 Route::get('/tvshows', 'TvShowsController@index');
 Route::get('/add/tvshow', 'TvShowsController@addTvShow');
 Route::post('/insert/tvshow', 'TvShowsController@insertTvShow');
@@ -41,14 +43,19 @@ Route::post('/delete/tvshow', 'TvShowsController@deleteTvShow');
 Route::post('/update/tvshow', 'TvShowsController@updateTvShow');
 Route::post('/update/tvshow/action', 'TvShowsController@updateTvShowAction');
 
-// Routes in relation to video_games element
+// Routes in relation to genre element
+Route::get('/add/genre', 'GenresController@addGenre');
+Route::post('/insert/genre', 'GenresController@insertGenre');
+
+/*
+// Routes in relation to videogame element
 Route::get('/videogames', 'VideoGamesController@index');
 Route::get('/add/videogame', 'VideoGamesController@addVideoGame');
 Route::post('/insert/videogame', 'VideoGamesController@insertVideoGame');
 Route::post('/delete/videogame', 'VideoGamesController@deleteVideoGame');
 Route::post('/update/videogame', 'VideoGamesController@updateVideoGame');
 Route::post('/update/videogame/action', 'VideoGamesController@updateVideoGameAction');
-
+*/
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

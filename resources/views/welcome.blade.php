@@ -66,29 +66,19 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     Virgin-E
                 </div>
 
                 <div class="links">
-                    <a href="#">ALBUMS</a>
-                    <a href="#">MOVIES</a>
-                    <a href="#">TV SHOWS</a>
-                    <a href="#">VIDEO GAMES</a>
+                    <a href="/albums">ALBUMS</a>
+                    <a href="/movies">MOVIES</a>
+                    <a href="/tvshows">TV SHOWS</a>
+                    <a href="/videogames">VIDEO GAMES</a>
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

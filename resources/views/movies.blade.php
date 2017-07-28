@@ -71,16 +71,16 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ url('/albums') }}">Albums</a>
-                        <a href="{{ url('/tv_shows') }}">TV shows</a>
-                        <a href="{{ url('/video_games') }}">Video Games</a>
+                    <a href="/albums">Albums</a>
+                    <a href="/tvshows">TV Shows</a>
+                    <a href="/videogames">Video Games</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Movies
+                    Work in progress...
                 </div>
 
             </div>
